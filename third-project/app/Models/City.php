@@ -14,7 +14,4 @@ class City extends Model
         'country',
     ];
 
-    public function tickets() {
-        return $this->hasMany(Ticket::class);
-    }
 }

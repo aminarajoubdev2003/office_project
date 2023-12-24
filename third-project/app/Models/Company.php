@@ -15,7 +15,5 @@ class Company extends Model
         'phone'
     ];
 
-    public function tickets() {
-        return $this->hasMany(Ticket::class);
-    }
+    
 }
