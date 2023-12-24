@@ -10,10 +10,10 @@ class Ticket extends Model
     use HasFactory;
     public function city()
     {
-        return $this->belongsto(City::class);
+        return $this->belongsTo(City::class);
     }
-    public function booking()
+    public function bookings()
     {
-        return $this->hasmany(Booking::class);
+        return $this->hasMany(Booking::class);
     }
 }

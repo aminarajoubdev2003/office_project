@@ -10,14 +10,14 @@ class Booking extends Model
     use HasFactory;
     public function customer()
     {
-        return $this->belongsto(customer::class);
+        return $this->belongsTo(customer::class);
     }
     public function hotel()
     {
-        return $this->belongsto(Hotel::class);
+        return $this->belongsTo(Hotels::class);
     }
     public function ticket()
     {
-        return $this->belongsto(Ticket::class);
+        return $this->belongsTo(Ticket::class);
     }
 }

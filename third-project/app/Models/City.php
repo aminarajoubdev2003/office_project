@@ -8,12 +8,12 @@ use Illuminate\Database\Eloquent\Model;
 class City extends Model
 {
     use HasFactory;
-    public function hotel()
+    public function hotels()
     {
-        return $this->hasmany(City::class);
+        return $this->hasMany(City::class);
     }
-    public function Ticket()
+    public function tckets()
     {
-        return $this->hasmany(Ticket::class);
+        return $this->hasMany(Ticket::class);
     }
 }

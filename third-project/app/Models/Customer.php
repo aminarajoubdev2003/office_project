@@ -9,12 +9,12 @@ class Customer extends Model
 {
     use HasFactory;
     
-    public function rating()
+    public function ratings()
     {
-        return $this->hasmany(Rating::class);
+        return $this->hasMany(Rating::class);
     }
-    public function booking()
+    public function bookings()
     {
-        return $this->hasmany(Booking::class);
+        return $this->hasMany(Booking::class);
     }
 }
